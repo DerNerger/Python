@@ -1,4 +1,4 @@
-#!/usr/bin/inv Python 2
+#!/usr/bin/env python2 
 
 def collatz_folge(n):
     n=int(n)
@@ -6,7 +6,7 @@ def collatz_folge(n):
     if n == 1:
         return
     if n % 2 == 0 :
-        collatz_folge(float(n)/2)
+        collatz_folge(n/2)
     else:
         collatz_folge(3*n+1)
 
